@@ -16,9 +16,8 @@ type Elevator struct {
 func NewElevatorBank(total int) *ElevatorBank {
 	elevators := make([]Elevator, 0)
 
-	for i := 0; i < total; {
+	for i := 0; i < total; i++ {
 		elevators = append(elevators, Elevator{Status: "idle"})
-		i++
 	}
 
 	return &ElevatorBank{
